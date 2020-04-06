@@ -16,7 +16,7 @@ Tasks
 1.  Given a store id, return the payment methods (card brands) available for it, and return to the end user (list payments). Payments can be online (credit cards), or offline (cash, POS machines).
 2.  Process a payment (mock external calls)
 
-**look at the steps of the follow illustration**
+**Take a look at the steps of the follow illustration**
 
 ![pay-img](payment-gateways-1.png)
 
@@ -29,7 +29,7 @@ Tasks
 4.  Available payment methods can be offline (cash, check, POS machine) or online (credit card or digital wallet)
 5.  If the user requesting for the payment methods is a fraudster, the service should return only offline payment options
 6.  Your data model should be flexible enough to permit cost ($) optimizations (should be easy to update)
-7.  Gateways often have outages, but processing payments should continue working in these situations
+7.  **Gateways often have outages**, but processing payments should continue working in these situations
 
 **Additional information about the agents/actors/entities involved in our business domain**
 
