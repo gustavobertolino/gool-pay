@@ -1,5 +1,5 @@
 # gool-pay
-**Payment processing system specific for web store clients.**
+**Payment processing system/gateway specific for web store clients.**
 **For training purpose only**
 
 **The payment flow works as following:**
@@ -15,6 +15,11 @@ Tasks
 
 1.  Given a store id, return the payment methods (card brands) available for it, and return to the end user (list payments). Payments can be online (credit cards), or offline (cash, POS machines).
 2.  Process a payment (mock external calls)
+
+**look at the steps of the follow illustration**
+
+![pay-img](payment-gateways-1.png)
+
 
 **Consider the following:**
 
