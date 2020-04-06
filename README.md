@@ -20,7 +20,7 @@ Tasks
 
 1.  The service should be able to answer tens of thousands of requests per minute
 2.  The configuration information does not change often
-3   The payment configuration depends on the restaurant and the end user
+3.  The payment configuration depends on the store and the end user
 4.  Available payment methods can be offline (cash, check, POS machine) or online (credit card or digital wallet)
 5.  If the user requesting for the payment methods is a fraudster, the service should return only offline payment options
 6.  Your data model should be flexible enough to permit cost ($) optimizations (should be easy to update)
@@ -35,10 +35,6 @@ Tasks
 **Costs**
 **Each of the external services has a cost:**
 
-    Gateway: fixed fee per transaction
-    Acquirers: percentage of transaction amount
-    Providers: percentage of transaction amount, already including anti-fraud and gateway.
-
-
-
-
+1.  Gateway: fixed fee per transaction
+2.  Acquirers: percentage of transaction amount
+3.  Providers: percentage of transaction amount, already including anti-fraud and gateway.
