@@ -1,5 +1,6 @@
 # gool-pay
-Payment processing system specific for web store clients. For training purpose only
+**Payment processing system specific for web store clients.**
+**For training purpose only**
 
 The payment flow works as following:
 
