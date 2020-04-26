@@ -1,6 +1,5 @@
 # gool-pay
-**Payment processing system API specific for web store clients.**
-**For training purpose only**
+Payment processing system API specific for web store clients. For training purpose only
 
 ## Prerequisites for back-end
 
