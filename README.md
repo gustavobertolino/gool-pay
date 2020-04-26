@@ -16,7 +16,7 @@ To start a web server for the application, run:
 ## License
 Copyright © 2020 gool-pay
 
-**The payment flow works as following:**
+## The payment flow works as following:
 
 1.  User chooses store and order item - then proceeds to checkout
 2.  Specific payment methods are listed to the user, depending on the store configuration and risk analysis
