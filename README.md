@@ -2,6 +2,22 @@
 **Payment processing system API specific for web store clients.**
 **For training purpose only**
 
+## Prerequisites for back-end
+
+You will need [Leiningen][] 2.0.0 or above installed.
+
+[leiningen]: https://github.com/technomancy/leiningen
+
+## Running
+
+To start a web server for the application, run:
+
+    lein ring server
+
+## License
+
+Copyright © 2020 gool-pay
+
 **The payment flow works as following:**
 
 1.  User chooses store and order item - then proceeds to checkout
