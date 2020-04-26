@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 5000,
+            "database": "gool-pay",
+            "dialect": "MySQL",
+            "name": "mysql-db",
+            "password": "myuser",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
