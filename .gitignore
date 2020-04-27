@@ -9,4 +9,3 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 .vscode
-mysql-db Session.sql

@@ -1,5 +1,3 @@
-BEGIN TRANSACTION;
-
 CREATE TABLE IF NOT EXISTS payment(
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
     user_id INT NOT NULL,
@@ -7,6 +5,3 @@ CREATE TABLE IF NOT EXISTS payment(
     payment_method VARCHAR(50) NOT NULL, 
     card_brand VARCHAR(50)
 );
-
-SELECT * FROM payment;
-COMMIT;
