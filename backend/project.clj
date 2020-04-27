@@ -6,7 +6,13 @@
                  [compojure "1.6.1"]
                  [ring/ring-defaults "0.3.2"]
                  [migratus "1.2.8"]
-                 [mysql/mysql-connector-java "5.1.6"]]
+                 [mysql/mysql-connector-java "5.1.6"]
+                 [org.clojure/tools.logging "1.1.0"]
+                 [log4j/log4j "1.2.17" :exclusions [javax.mail/mail
+                                                    javax.jms/jms
+                                                    com.sun.jmdk/jmxtools
+                                                    com.sun.jmx/jmxri]]
+                 ]
   :plugins [
     [lein-ring "0.12.5"]
     [migratus-lein "0.7.3"]]
