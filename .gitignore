@@ -1,4 +1,7 @@
-/target
+target
+backend/target
+backend.lein*
+backend/.nrepl*
 /lib
 /classes
 /checkouts
