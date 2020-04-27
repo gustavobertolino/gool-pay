@@ -1,5 +1,5 @@
-backend/target
 target
+backend/target
 /lib
 /classes
 /checkouts
