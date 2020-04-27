@@ -11,13 +11,6 @@
     [lein-ring "0.12.5"]
     [migratus-lein "0.7.3"]]
   :ring {:handler backend.handler/app}
-  :migratus {:store :database
-            :migration-dir "migrations"
-            :db {:classname "com.mysql.jdbc.Driver"
-                :subprotocol "mysql"
-                :subname "//localhost:3306/gool-pay"
-                :user "root"
-                :password "myuser"}}
   :profiles {
     :dev {
       :dependencies [
