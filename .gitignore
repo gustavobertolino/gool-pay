@@ -2,6 +2,7 @@ target
 backend/target
 backend/.lein-*
 backend/.nrepl*
+backend/resources/log/app*
 /lib
 /classes
 /checkouts
