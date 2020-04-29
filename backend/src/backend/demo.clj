@@ -1,6 +1,6 @@
 (ns backend.demo
     (:require [clojure.string :as string]
-              [clojure.tools.logging :as log]))
+              [taoensso.timbre :as log]))
 
 (defn capitalizing [some_string] (string/capitalize some_string))
 
