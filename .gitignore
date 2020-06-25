@@ -1,16 +1,2 @@
-target
-backend/target
-backend/.lein-*
-backend/.nrepl*
-backend/resources/log/app*
-/lib
-/classes
-/checkouts
-pom.xml
-pom.xml.asc
-*.jar
-*.class
-/.lein-*
-/.nrepl-port
-.vscode
-mysql-db Session.sql
+./frontend/out/*
+./backend/target/*
