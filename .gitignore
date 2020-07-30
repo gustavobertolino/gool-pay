@@ -1,8 +1,7 @@
-target
 backend/target
 backend/.lein-*
 backend/.nrepl*
-backend/resources/log/app*
+backend/resources/log/*
 /lib
 /classes
 /checkouts
@@ -14,3 +13,5 @@ pom.xml.asc
 /.nrepl-port
 .vscode
 mysql-db Session.sql
+frontend/out
+frontend/target

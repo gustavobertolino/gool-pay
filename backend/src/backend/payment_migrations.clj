@@ -1,22 +1,19 @@
 (ns backend.payment_migrations
- (:require [migratus.core :as migratus]))
+ (:require [migratus.core :as migratus]
+           [backend.appl_core :as appl_core]))
 
-(def config {:store :database
+(def db_config {:store :database
             :migration-dir "migrations"
-            :db {:classname "com.mysql.jdbc.Driver"
-                :subprotocol "mysql"
-                :subname "//localhost:3306/gool-pay"
-                :user "root"
-                :password "myuser"}})
+            :db @appl_core/db_connection_config})
 
 ;apply pending migrations
-(migratus/migrate config)
+;(migratus/migrate db_config)
 
 ;rollback the last migration applied
-(migratus/rollback config)
+;(migratus/rollback db_config)
 
 ;bring up migrations matching the ids
-(migratus/up config 20111206154000)
+;(migratus/up db_config 20111206154000)
 
 ;bring down migrations matching the ids
-(migratus/down config 20111206154000)
+;(migratus/down db_config 20111206154000)
