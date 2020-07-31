@@ -1,3 +1,4 @@
+backend/.cpcache
 backend/target
 backend/.lein-*
 backend/.nrepl*
