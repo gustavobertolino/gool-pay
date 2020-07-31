@@ -15,3 +15,4 @@ pom.xml.asc
 mysql-db Session.sql
 frontend/out
 frontend/target
+frontend/.cpcache
