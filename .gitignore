@@ -3,6 +3,8 @@ backend/target
 backend/.lein-*
 backend/.nrepl*
 backend/resources/log/*
+backend/.calva
+tags
 /lib
 /classes
 /checkouts
