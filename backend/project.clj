@@ -16,7 +16,8 @@
                  [cljfmt "0.6.8"]
                  [com.taoensso/timbre "4.10.0"]]
   
-  :main backend.appl_core
+  :main backend.payment_handler
+  :aot [backend.payment_handler]
   :plugins [
     [lein-ring "0.12.5"]
     [migratus-lein "0.7.3"]
