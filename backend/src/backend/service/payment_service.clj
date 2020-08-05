@@ -2,7 +2,6 @@
   (:require [backend.repository.payment_repository 
              :as payment_repository]))
 
-
 (defn get_payments []
   (payment_repository/get_payments))
 
