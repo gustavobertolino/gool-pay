@@ -12,10 +12,9 @@
 
   (route/not-found "Not Found"))
 
-(def app
-  (-> api-routes
-      (wrap-json-body :keywords? true)
-      (wrap-json-response :pretty true)))
+(def app (-> api-routes
+             (wrap-json-body :keywords? true)
+             wrap-json-response))
 
-(defn -main  [& args]
+(defn -main [] 
   (run-jetty app {:port 3000}))
