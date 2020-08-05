@@ -3,7 +3,8 @@
             [compojure.route :as route]
             [ring.adapter.jetty :refer [run-jetty]]
             [ring.middleware.json :refer [wrap-json-response wrap-json-body]]
-            [backend.service.payment_service :as payment_service]))
+            [backend.service.payment_service :as payment_service])
+  (:gen-class))
 
 (defroutes api-routes
   (GET "/" [] "Hello World")
@@ -16,5 +17,5 @@
              (wrap-json-body :keywords? true)
              wrap-json-response))
 
-(defn -main [] 
+(defn -main [& args]
   (run-jetty app {:port 3000}))
