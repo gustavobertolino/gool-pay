@@ -1,4 +1,4 @@
-(ns backend.demo
+(ns backend.testing_playground
   (:require [clojure.string :as string]
             [taoensso.timbre :as log]))
 
@@ -12,3 +12,6 @@
                          (log/error e "Dividing failed!"))))
 
 (dividing 10 0)
+
+(defn print-values [number]
+  (println "Result ", number))

@@ -15,26 +15,25 @@
                  [prismatic/schema "1.1.12"]
                  [cljfmt "0.6.8"]
                  [com.taoensso/timbre "4.10.0"]]
-  
+
   :main backend.payment_handler
   :aot [backend.payment_handler]
   :plugins [
-    [lein-ring "0.12.5"]
-    [migratus-lein "0.7.3"]
-    [lein-cljfmt "0.6.8"]]
+            [lein-ring "0.12.5"]
+            [migratus-lein "0.7.3"]
+            [lein-cljfmt "0.6.8"]]
 
   :migratus {:store :database
-           :migration-dir "migrations"
-           :db {:classname "com.mysql.jdbc.Driver"
-                :subprotocol "mysql"
-                :subname "//localhost:3306/gool-pay"
-                :user "root"
-                :password "myuser"}}
+             :migration-dir "migrations"
+             :db {:classname "com.mysql.jdbc.Driver"
+                  :subprotocol "mysql"
+                  :subname "//localhost:3306/gool-pay"
+                  :user "root"
+                  :password "myuser"}}
   :ring {:handler backend.payment_handler/app}
-  
+
   :profiles {
-    :dev {
-      :dependencies [
-        [javax.servlet/servlet-api "2.5"]
-        [ring/ring-mock "0.3.2"]]}}
-)
+             :dev {
+                   :dependencies [
+                                  [javax.servlet/servlet-api "2.5"]
+                                  [ring/ring-mock "0.3.2"]]}})

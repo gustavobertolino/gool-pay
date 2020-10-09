@@ -4,9 +4,14 @@
             "connectionTimeout": 5000,
             "database": "gool-pay",
             "dialect": "MySQL",
+            "driver": "MySQL",
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
             "name": "mysql-db",
             "password": "myuser",
             "port": 3306,
+            "previewLimit": 50,
             "server": "localhost",
             "username": "root"
         }

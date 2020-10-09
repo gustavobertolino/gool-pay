@@ -15,7 +15,8 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 .vscode
-mysql-db Session.sql
 frontend/out
 frontend/target
 frontend/.cpcache
+*.sql
+.vscode/*
