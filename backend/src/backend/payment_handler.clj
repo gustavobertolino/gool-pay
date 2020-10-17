@@ -6,6 +6,10 @@
             [backend.service.payment_service :as payment_service])
   (:gen-class))
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 81ecca4ef4803081515c094d36c2b5ade045ab54
 (defroutes api-routes
   (GET "/" [] "Hello World")
   (GET "/payments" [] (payment_service/get_payments))
