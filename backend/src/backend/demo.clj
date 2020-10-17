@@ -9,6 +9,20 @@
 (defn dividing [x y] (try
                        (/ x y) ;; <-- dividing by zero works bad.
                        (catch Exception e
+
                          (log/error e "Dividing failed!"))))
 
 (dividing 10 0)
+(dividing 10 22)
+
+(range 10)
+
+(defn my_new_func [num1 num2]
+ (* num1 num2))
+
+(defn reducing [list]
+  (reduce + list))
+
+(def nested-map {:a 1 :b {:c 100 :d 200}})
+
+(defn get-object [nested-map] (get-in nested-map [:b :d]))
