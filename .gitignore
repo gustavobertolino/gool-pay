@@ -14,8 +14,10 @@ pom.xml.asc
 *.class
 /.lein-*
 /.nrepl-port
-.vscode
 mysql-db Session.sql
 frontend/out
 frontend/target
 frontend/.cpcache
+.calva/*
+.vscode
+mysql-db.session.sql
