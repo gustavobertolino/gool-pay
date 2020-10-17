@@ -18,4 +18,4 @@
              wrap-json-response))
 
 (defn -main [& args]
-  (run-jetty app {:port 3000}))
+  (run-jetty app {:port 3010}))
