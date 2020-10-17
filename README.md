@@ -3,18 +3,81 @@ Payment processing system API specific for web store clients. For training purpo
 
 ## Prerequisites for back-end
 
-You will need [Leiningen][] 2.0.0 or above installed.
+You will need [Leiningen][] 2.0.0+, JVM (OpenJDK8+ or any other JVM provider) and Clojure 1.10.0+ installed
 
-[leiningen]: https://github.com/technomancy/leiningen
 
 ## Running
 
-To start a web server for the application, run:
+To start a web server for the application with inspection feature (for inspecting inline defs), follow these steps:
 
-    lein ring server
+Start a nREPL session and connect to it via any REPL client with the port specified by nREPL
 
-## License
-Copyright © 2020 gool-pay
+    lein repl
+
+After loading all namespaces necessary to run the application's methods,
+run the following commands:
+
+- load the jetty module for the server
+
+        (require '[ring.adapter.jetty :refer [run-jetty]])
+
+- define a binding 'server' with the webserver port and startup
+
+        (defonce server (run-jetty #'app {:port 3010 :join? false}))
+
+- if you want to stop the server run this command to stop the server up & running
+
+        (.stop server)
+
+- to start it again
+
+        (.start server)
+    
+- if you simply want to put the application to run but without inspection inline def
+
+        lein ring server
+
+You need to configure the database for development. In this case you need to create a MySQL database with the following configuration
+
+    database: gool-pay
+    host + port: localhost:3306
+    user: root
+    password: myuser
+
+It will follow the configuration
+
+```
+(def db_connection_config {:classname "com.mysql.jdbc.Driver"
+                           :subprotocol "mysql"
+                           :subname "//localhost:3306/gool-pay"
+                           :user "root"
+                           :password "myuser"})
+```
+
+Test and validate the database connection with your preferred MySQL client
+
+To call the endpoints, you can make HTTP requests with your preferred HTTP/REST APi Client.
+The examples bellow via cURL
+
+- register a new paynment
+```
+curl --request POST \
+  --url http://localhost:3010/payments \
+  --header 'content-type: application/json' \
+  --data '{
+	"user_id": 111,
+	"store_id": 12,
+	"payment_method": "offline",
+	"card_brand": "cielo"
+}'
+```
+
+- get the paymentes registered
+```
+curl --request GET \
+  --url http://localhost:3010/payments
+```
+
 
 ## The payment flow works as following:
 
