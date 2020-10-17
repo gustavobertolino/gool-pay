@@ -14,13 +14,9 @@
                  [toucan "1.15.1"]
                  [prismatic/schema "1.1.12"]
                  [cljfmt "0.6.8"]
-<<<<<<< HEAD
                  [com.taoensso/timbre "4.10.0"]
                  [proto-repl-sayid "0.1.3"]
                  [proto-repl-charts "0.3.2"]]
-=======
-                 [com.taoensso/timbre "4.10.0"]]
->>>>>>> 81ecca4ef4803081515c094d36c2b5ade045ab54
 
   :main backend.payment_handler
   :aot [backend.payment_handler]
