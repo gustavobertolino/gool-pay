@@ -1,4 +1,4 @@
-(ns backend.model.payment
+(ns backend.model.payment-model
   (:require [schema.core :as sch]))
 
 (def PaymentSchema

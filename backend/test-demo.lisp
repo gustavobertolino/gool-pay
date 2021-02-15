@@ -2,3 +2,5 @@
 (+ 1 1)
 
 (defvar my_other_var 3)
+
+(print my_other_var)

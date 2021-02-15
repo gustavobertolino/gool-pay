@@ -1,6 +1,6 @@
-(ns backend.repository.payment_repository
-  (:require [backend.model.payment :as payment_model]
-            [backend.appl_core :as appl_core]
+(ns backend.repository.payment-repository
+  (:require [backend.model.payment-model :as payment_model]
+            [backend.appl-core :as appl_core]
             [clojure.java.jdbc :as db]))
 
 (defn get_payments []

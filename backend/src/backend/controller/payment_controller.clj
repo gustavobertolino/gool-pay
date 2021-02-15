@@ -1,1 +1,1 @@
-(ns backend.controller.payment_controller)
+(ns backend.controller.payment-controller)

@@ -1,5 +1,5 @@
-(ns backend.service.payment_service
-  (:require [backend.repository.payment_repository
+(ns backend.service.payment-service
+  (:require [backend.repository.payment-repository
              :as payment_repository]))
 
 (defn get_payments []

@@ -1,7 +1,7 @@
 (ns backend.handler-test
   (:require [clojure.test :refer :all]
             [ring.mock.request :as mock]
-            [backend.payment_handler :refer :all]))
+            [backend.payment-handler :refer :all]))
 
 (deftest test-app
   (testing "main route"

@@ -1,4 +1,4 @@
-(ns backend.appl_core)
+(ns backend.appl-core)
 
 (def db_connection_config {:classname "com.mysql.jdbc.Driver"
                            :subprotocol "mysql"
