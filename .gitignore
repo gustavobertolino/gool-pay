@@ -21,3 +21,5 @@ frontend/.cpcache
 .calva/*
 .vscode
 mysql-db.session.sql
+/.clj-kondo
+/.lsp
