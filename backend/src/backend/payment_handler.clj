@@ -6,7 +6,7 @@
             [backend.service.payment-service :as payment_service])
   (:gen-class))
 
-(defn hello-world [] (prn "Hello World DEVS CLJ!"))
+(defn hello-world [] (prn "Hello World DEVS Node!"))
 
 (defroutes api-routes
   (GET "/" [] (hello-world))
