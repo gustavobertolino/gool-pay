@@ -1,20 +1,24 @@
 (ns backend.server
   (:require [ring.adapter.jetty :refer [run-jetty]]
+            [clojure.tools.namespace.repl :refer [refresh]]
             [backend.payment-handler :as handler]))
 
-(defonce app-server
-  (run-jetty #'handler/app {:port 3011 :join? false}))
-(defonce state (atom nil))
+(comment
+ (defonce state (atom nil))
 
-(defn start []
-  (.start app-server)
-  (reset! state 1))
+ (defn start []
+    (.start handler/app-server)
+    (reset! state handler/app-server))
 
-(defn stop []
-  (when @state
-    (.stop app-server))
-  (reset! state nil))
+ (defn stop []
+    (when @state
+      (.stop handler/app-server))
+    (reset! state nil))
 
-(defn restart []
+ (defn restart []
+    (stop)
+    (start))
+
+ (defn reload-all []
   (stop)
-  (start))
+  (refresh)))
