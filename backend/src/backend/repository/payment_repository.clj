@@ -6,6 +6,7 @@
 (defn get_payments []
   (db/query appl_core/db_connection_config ["select * from payment"]))
 
+
 (defn create_payment [req]
   (let [req_map (into {} (for [[k v] (:body req)] [(keyword k) v]))]
     (payment_model/validate_schema req_map)

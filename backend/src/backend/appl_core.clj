@@ -1,7 +1,9 @@
 (ns backend.appl-core)
 
-(def db_connection_config {:classname "com.mysql.jdbc.Driver"
-                           :subprotocol "mysql"
-                           :subname "//localhost:3306/gool-pay"
-                           :user "root"
-                           :password "myuser"})
+(def db_connection_config
+  {:dbtype "postgresql"
+   :dbname "gool_pay"
+   :host "localhost"
+   :port "5432"
+   :user "postgres"
+   :password "postgres"})

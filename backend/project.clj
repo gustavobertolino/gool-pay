@@ -10,6 +10,7 @@
                  [org.clojure/java.jdbc "0.7.11"]
                  [prismatic/schema "1.1.12"]
                  [com.taoensso/timbre "4.10.0"]
+                 [org.postgresql/postgresql "42.2.9"]
                  [proto-repl "0.3.1"]]
 
   :main ^:skip-aot backend.payment-handler
