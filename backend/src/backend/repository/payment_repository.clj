@@ -4,11 +4,13 @@
             [clojure.java.jdbc :as db]))
 
 (defn get_payments []
-  (db/query appl_core/db_connection_config ["select * from payment"]))
-
+  (db/query appl_core/db_connection_config
+            ["select * from payment"]))
 
 (defn create_payment [req]
-  (let [req_map (into {} (for [[k v] (:body req)] [(keyword k) v]))]
+  (let [req_map (into {} (for [[k v]
+                               (:body req)]
+                           [(keyword k) v]))]
     (payment_model/validate_schema req_map)
     (db/insert! appl_core/db_connection_config :payment
                 {:user_id (get req_map :user_id)
