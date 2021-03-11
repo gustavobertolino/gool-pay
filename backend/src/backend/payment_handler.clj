@@ -14,7 +14,7 @@
 
 (defroutes api-routes
   (GET "/" [] (hello-world))
-  (GET "/payments" [] (payment_service/get_payments))
+  (GET "/payments" [] (memoize payment_service/get_payments))
   (POST "/payments" req (payment_service/create_payment req))
   (route/not-found "Not Found"))
 

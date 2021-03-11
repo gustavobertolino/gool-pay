@@ -20,5 +20,6 @@
          :nrepl {:start? true
                  :port 3030}
          :port 8090}
-  :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                                  [ring/ring-mock "0.3.2"]]}})
+  :profiles {:dev {:dependencies
+                   [[javax.servlet/servlet-api "2.5"]
+                    [ring/ring-mock "0.3.2"]]}})
