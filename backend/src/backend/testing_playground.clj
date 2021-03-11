@@ -7,6 +7,8 @@
 
 (defn greet [name] (str "Hello, " name))
 
+(def nome-richard "Richard")
+
 (defn dividing [x y]
   (try
     (/ x y) ;; <-- dividing by zero works bad.
